@@ -1,0 +1,81 @@
+Team Hacking Geeks
+Ajmain Mustafa
+Badal Bhakta
+Priscella Resendez
+Michael Rickli
+
+
+import pandas as pd
+from matplotlib import pyplot as plt
+sample_data = pd.read_csv("ODI 1996-2001.csv")
+sample_data
+sample_data2 = pd.read_csv("ODI 2002-2011.csv")
+sample_data2
+
+//Lines 8-13: Importing prebuilt functions and assigning datasheets given to us to variables
+
+plt.plot(sample_data.C4,sample_data.C3)
+plt.title("C3 AND C4 GRAPH")
+plt.xlabel("C4")
+plt.ylabel("C3")
+plt.show()
+
+//Line 17-21: Gathering C3 and C4 column for 1996-2001 datasheet and making a graph
+
+plt.plot(sample_data.Q2,sample_data.C7C)
+plt.title("Q2 AND C7C")
+plt.xlabel("Q2")
+plt.ylabel("C7C")
+plt.show()
+
+//Line 25-29: Gathering Q2 and C7C column for 1996-2001 datasheet and making a graph
+
+plt.plot(sample_data.Q2,sample_data.C7B)
+plt.title("Q2 AND C7B")
+plt.xlabel("Q2")
+plt.ylabel("C7B")
+plt.show()
+
+//Line 33-37: Gathering Q2 and C7B column for 1996-2001 datasheet and making a graph
+
+plt.plot(sample_data.Q2,sample_data.C7A)
+plt.title("Q2 AND C7A")
+plt.xlabel("Q2")
+plt.ylabel("C7A")
+plt.show()
+
+//Line 41-45: Gathering Q2 and C7A column for 1996-2001 datasheet and making a graph
+
+plt.plot(sample_data2.HOURS_Q2,sample_data2.INJ_M1)
+plt.title("HOURS AND INJ")
+plt.xlabel("HOURS")
+plt.ylabel("INJ")
+plt.show()
+
+//Line 49-53: Gathering HOURS_Q2 and INJ_M1 column for 2002-2011 datasheet and making a graph
+
+plt.plot(sample_data2.HOURS_Q2,sample_data2.POIS_M4)
+plt.title("HOURS AND POIS INJ")
+plt.xlabel("HOURS")
+plt.ylabel("POISION INJ")
+plt.show()
+
+//Line 57-61: Gathering HOURS_Q2 and POIS_M4 column for 2002-2011 datasheet and making a graph
+
+plt.plot(sample_data2.HOURS_Q2,sample_data2.SKIN_M2)
+plt.title("HOURS AND SKIN INJ")
+plt.xlabel("HOURS")
+plt.ylabel("SKIN INJ")
+plt.show()
+
+//Line 65-69: Gathering HOURS_Q2 and SKIN_M2 column for 2002-2011 datasheet and making a graph
+
+plt.plot(sample_data2.HOURS_Q2,sample_data2.RESP_M3)
+plt.title("HOURS AND RESP INJ")
+plt.xlabel("HOURS")
+plt.ylabel("RESP INJ")
+plt.show()
+
+//Line 73-77: Gathering HOURS_Q2 and RESP_M3 column for 2002-2011 datasheet and making a graph
+
+
